@@ -1,5 +1,9 @@
 # jwt
 jsonwebtoken middleware for goa.
+[![Build Status](https://travis-ci.org/goa-go/jwt.svg?branch=master)](https://travis-ci.org/goa-go/jwt)
+[![Codecov](https://codecov.io/gh/goa-go/jwt/branch/master/graph/badge.svg)](https://codecov.io/github/goa-go/jwt?branch=master)
+[![Go Doc](https://godoc.org/github.com/goa-go/jwt?status.svg)](http://godoc.org/github.com/goa-go/jwt)
+[![Go Report](https://goreportcard.com/badge/github.com/goa-go/jwt)](https://goreportcard.com/report/github.com/goa-go/jwt)
 
 ## Installation
 
@@ -27,11 +31,11 @@ func main(){
 ## Options
 
 Field | Type | Reqired | Description
-- | - | - | -
-Secret | interface{} | true | jwt secret
-Unless | []string | false | unless paths
-GetToken | func(*goa.Context) string | false | custom getToken function
-Verify | func(string, interface{}) bool | false | custom verify function
+-|-|-|-
+Secret | interface{} | true | jwt secret |
+Unless | []string | false | unless paths |
+GetToken | func(*goa.Context) string | false | custom getToken function |
+Verify | func(string, interface{}) bool | false | custom verify function |
 
 ## License
 
