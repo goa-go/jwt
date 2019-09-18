@@ -1,6 +1,7 @@
 package jwt
 
 import (
+	"errors"
 	"net/http"
 
 	"github.com/goa-go/goa"
@@ -22,6 +23,10 @@ type token struct {
 
 // New returns a jwt middleware for goa.
 func New(ops Options) goa.Middleware {
+	if ops.Secret == nil {
+		panic(errors.New("require secret"))
+	}
+
 	if str, ok := ops.Secret.(string); ok {
 		ops.Secret = utils.Str2Bytes(str)
 	}
