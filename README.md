@@ -1,5 +1,6 @@
 # jwt
-jsonwebtoken middleware for goa.
+jsonwebtoken-middleware for goa.
+
 [![Build Status](https://travis-ci.org/goa-go/jwt.svg?branch=master)](https://travis-ci.org/goa-go/jwt)
 [![Codecov](https://codecov.io/gh/goa-go/jwt/branch/master/graph/badge.svg)](https://codecov.io/github/goa-go/jwt?branch=master)
 [![Go Doc](https://godoc.org/github.com/goa-go/jwt?status.svg)](http://godoc.org/github.com/goa-go/jwt)
